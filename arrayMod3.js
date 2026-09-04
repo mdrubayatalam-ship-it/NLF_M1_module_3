@@ -20,5 +20,14 @@ let totalPrice = product.reduce((acc,current)=>{
      return (acc += current.price);
 },0);
 
-console.log(totalPrice);
+// console.log(totalPrice);
+
+
+// Sorting with sort method
+
+// let sorted = [10,50,20,35,900,4,75].sort((a,b)=>a-b); // this is for acsending order
+// let sorted = [10,50,20,35,900,4,75].sort((a,b)=>b-a); // this is for acsending order
+
+let sorted = product.sort((a,b) => a.price - b.price)
+console.log(sorted);
 
