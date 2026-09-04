@@ -28,6 +28,10 @@ let totalPrice = product.reduce((acc,current)=>{
 // let sorted = [10,50,20,35,900,4,75].sort((a,b)=>a-b); // this is for acsending order
 // let sorted = [10,50,20,35,900,4,75].sort((a,b)=>b-a); // this is for acsending order
 
-let sorted = product.sort((a,b) => a.price - b.price)
-console.log(sorted);
+let sorted = product.sort((a,b) => a.price - b.price);
+// console.log(sorted);
 
+//filtering
+
+let filtered = product.filter((p) => p.inStock === true);
+console.log(filtered);
